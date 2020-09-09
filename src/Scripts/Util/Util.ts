@@ -38,13 +38,14 @@ export function isIOS(): boolean {
 }
 
 export function isInApp(): boolean {
-  return (
-    navigator.userAgent.includes('Shopee') ||
-    navigator.userAgent.includes('Beeshop')
-  );
+  return true;
+  // return null (
+  //   //navigator.userAgent.includes('Shopee') ||
+  //   //navigator.userAgent.includes('Beeshop')
+  // );
 }
 
 export const getUrlParams = () => {
   const urlParams = new URLSearchParams(window.location.search.substring(1));
-  return Object.fromEntries(urlParams);
+  return null // Object.fromEntries(urlParams);
 };
